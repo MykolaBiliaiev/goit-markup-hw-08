@@ -1,0 +1,48 @@
+.our-clients {
+padding-bottom: 94px;
+padding-top: 94px;
+}
+
+.our-clients__title {
+font-family: Roboto, sans-serif;
+font-weight: bold;
+font-style: normal;
+font-size: 36px;
+text-align: center;
+}
+
+.our-clients__list {
+display: flex;
+justify-content: space-between;
+margin-right: auto;
+margin-left: auto;
+margin-top: 50px;
+}
+
+.our-clients__link {
+display: flex;
+width: 170px;
+height: 92px;
+border: 1px solid #AFB1B8;
+box-sizing: border-box;
+border-radius: 4px;
+justify-content: center;
+align-items: center;
+color: #AFB1B8;
+
+transition-property: border, color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover, &:focus {
+color: map-get($colors , "primary");;
+border-color: map-get($colors , "primary");;
+}
+}
+
+.our-clients__logo {
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+fill: currentColor;
+}
