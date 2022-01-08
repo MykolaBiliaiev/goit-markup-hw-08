@@ -2,14 +2,27 @@
 background-color: #2f303a;
 padding-top: 60px;
 padding-bottom: 60px;
-display: flex;
-justify-content: space-between;
+
+@media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+}
+
 }
 
 .footer__content {
-display: flex;
+text-align: center;
 margin-left: auto;
 margin-right: auto;
+
+@media screen and (min-width: 768px)  {
+    display: flex;
+}
+
+@media screen and (min-width: 1170px) {
+    text-align-last: left;
+    
+}
 }
 
 .footer-contacts__item:not(:last-child) {
@@ -39,9 +52,16 @@ line-height: 1.7;
 
 .footer-social-media {
 width: 206px;
+margin-top: 60px;
+margin-left: auto;
 margin-right: auto;
-margin-left: 70px;
-margin-top: 12px;
+
+@media screen and (min-width: 1170px) {
+    width: 206px;
+    margin-right: auto;
+    margin-left: 70px;
+    margin-top: 12px;
+}
 }
 
 .join-us-title {

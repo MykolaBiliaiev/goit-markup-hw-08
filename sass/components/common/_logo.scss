@@ -1,10 +1,30 @@
 /* logo */
 .logo {
-font-family: Raleway, sans-serif;
-font-size: 26px;
-line-height: 1.2;
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
 letter-spacing: 0.03em;
-margin-right: 90px;
+
+@media screen and (min-width: 768px) {
+font-family: Raleway, sans-serif;
+line-height: 28px;
+letter-spacing: 0.03em;
+}
+}
+
+
+
+.logo-footer_mobile {
+@media screen and (max-width:480px) {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-left: auto;
+    margin-right: auto;
+    }
 }
 
 .logo__web--blue-color {

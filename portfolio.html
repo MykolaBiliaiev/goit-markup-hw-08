@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
@@ -20,6 +21,33 @@
         </a>
 
         <nav class="header-navigation">
+
+<button type="button" class="open-menu js-open-menu">
+    <svg width="24" height="16" class="open-menu_btn-icon" aria-label="mobile-menu">
+        <use class="icon-menu" href="images/symbol-defs.svg#mobile-menu_icon"></use>
+    </svg>
+</button>
+
+<div class="mobile-menu js-menu-container" id="mobile-menu">
+    <button class="js-close-menu">
+        <svg width="16" height="16" class="icon-cross">
+            <use class="icon-cross" href="images/symbol-defs.svg#cross-icon"></use>
+        </svg>
+    </button>
+    <div class="navigation">
+        <ul class="list">
+            <li class="mobile-menu_nav-link"><a href="./index.html">Студия</a></li>
+            <li class="mobile-menu_nav-link"><a href="./portfolio.html">Портфолио</a></li>
+            <li class="mobile-menu_nav-link">Контакты</li>
+        </ul>
+    </div>
+    <div class="contacts">
+        <ul class="list">
+            <li class="mobile-menu_nav-link"><a href="tel:+380961111111">+380961111111</a></li>
+            <li class="mobile-menu_nav-link"><a href="mailto:info@devstudio.com">info@example.com</a></li>
+        </ul>
+    </div>
+</div>
 
             <ul class="site-nav list">
                 <li class="site-nav__item"><a href="./index.html"
@@ -66,11 +94,9 @@
 <div class="container projects-img-container">
 <ul class="grid list">
     <li class="grid__item">
-        <div class="card-img">
-            <a href=""><img src="./images/portfolio/portfolio-1.jpg" alt="екран ноутбука"
-            width="370" 
-            height="294">
-        <p class="card-img__text-overlay">Технокряк это современная площадка распространения коронавируса. Компании
+        <div class="thumb">
+            <a href=""><img src="./images/portfolio/portfolio-1.jpg" alt="екран ноутбука" class="thumb-img">
+        <p class="thumb__text-overlay">Технокряк это современная площадка распространения коронавируса. Компании
             используют эту платформу для цифрового
             шпионажа и атак на защищённые сервера конкурентов.</p>
             </a>
@@ -83,9 +109,9 @@
     </li>
 
     <li class="grid__item">
-        <div class="card-img">
-            <a href=""><img src="./images/portfolio/portfolio-2.jpg" alt="лого ресторана" width="370" height="294">
-            <p class="card-img__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
+        <div class="thumb">
+            <a href=""><img src="./images/portfolio/portfolio-2.jpg" alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
                 laborum necessitatibus? Voluptatem nisi, error dicta aliquid quo iure.
             </p>
             </a>
@@ -97,11 +123,9 @@
     </li>
 
     <li class="grid__item">
-        <div class="card-img">
-        <a href=""><img src="./images/portfolio/portfolio-3.jpg" alt="лого ресторана"
-            width="370" 
-            height="294">
-            <p class="card-img__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut laborum necessitatibus? Voluptatem nisi, error dicta aliquid quo iure.
+        <div class="thumb">
+        <a href=""><img src="./images/portfolio/portfolio-3.jpg" alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut laborum necessitatibus? Voluptatem nisi, error dicta aliquid quo iure.
             </p>
             </a>
         </div>
@@ -112,9 +136,9 @@
     </li>
 
     <li class="grid__item">
-        <div class="card-img">
-            <a href=""><img src="./images/portfolio/portfolio-4.jpg" alt="лого ресторана" width="370" height="294">
-            <p class="card-img__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
+        <div class="thumb">
+            <a href=""><img src="./images/portfolio/portfolio-4.jpg" alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
                 laborum necessitatibus? Voluptatem nisi, error dicta aliquid quo iure.
             </p>
             </a>
@@ -126,9 +150,9 @@
     </li>
 
     <li class="grid__item"> 
-        <div class="card-img">
-            <a href=""><img src="./images/portfolio/portfolio-5.jpg" alt="лого ресторана" width="370" height="294">
-            <p class="card-img__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
+        <div class="thumb">
+            <a href=""><img src="./images/portfolio/portfolio-5.jpg" alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
                 laborum necessitatibus? Voluptatem nisi, error dicta aliquid quo iure.
             </p>
             </a>
@@ -140,9 +164,9 @@
     </li>
 
     <li class="grid__item">
-        <div class="card-img">
-            <a href=""><img src="./images/portfolio/portfolio-6.jpg" alt="лого ресторана" width="370" height="294">
-            <p class="card-img__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
+        <div class="thumb">
+            <a href=""><img src="./images/portfolio/portfolio-6.jpg" alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
                 laborum necessitatibus? Voluptatem nisi, error dicta aliquid quo iure.
             </p>
             </a>
@@ -154,9 +178,9 @@
     </li>
 
     <li class="grid__item">
-        <div class="card-img">
-            <a href=""><img src="./images/portfolio/portfolio-7.jpg" alt="лого ресторана" width="370" height="294">
-            <p class="card-img__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
+        <div class="thumb">
+            <a href=""><img src="./images/portfolio/portfolio-7.jpg" alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
                 laborum necessitatibus? Voluptatem nisi, error dicta aliquid quo iure.
             </p>
             </a>
@@ -168,9 +192,9 @@
     </li>
 
     <li class="grid__item">
-        <div class="card-img">
-            <a href=""><img src="./images/portfolio/portfolio-8.jpg" alt="лого ресторана" width="370" height="294">
-            <p class="card-img__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
+        <div class="thumb">
+            <a href=""><img src="./images/portfolio/portfolio-8.jpg" alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
                 laborum necessitatibus? Voluptatem nisi, error dicta aliquid quo iure.
             </p>
             </a>
@@ -182,9 +206,9 @@
     </li>
 
     <li class="grid__item">
-        <div class="card-img">
-            <a href=""><img src="./images/portfolio/portfolio-9.jpg" alt="лого ресторана" width="370" height="294">
-            <p class="card-img__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
+        <div class="thumb">
+            <a href=""><img src="./images/portfolio/portfolio-9.jpg" alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
                 laborum necessitatibus? Voluptatem nisi, error dicta aliquid quo iure.
             </p>
             </a>
@@ -279,5 +303,6 @@
     </div>
 </footer>
 
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

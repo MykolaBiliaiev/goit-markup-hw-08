@@ -1,8 +1,15 @@
 .page-header {
 background-color: map-get($colors , "secondary" );
 border-bottom: 1px solid #ececec;
-padding-top: 24px;
-padding-bottom: 24px;
+padding: 16px 15px;
+
+@media screen and (min-width:768px) {
+background-color: map-get($colors , "secondary" );
+border-bottom: 1px solid #ececec;
+padding: 24px 15px;
+}
+
+
 }
 
 .page-header__container {

@@ -8,6 +8,10 @@ transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+@media screen and (max-width:767px) {
+    display: none;
+}
+
 &:hover, &:focus {
     color: map-get($colors , "primary");;
 }

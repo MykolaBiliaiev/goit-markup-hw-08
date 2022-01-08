@@ -1,11 +1,15 @@
 .what-we-do-section {
-  display: flex;
-  justify-content: center;
-  margin-top: 94px;
+display: flex;
+justify-content: center;
+margin-top: 94px;
+
+  @media screen and (max-width:1169px) {
+  display: none;
+  }
 }
 
 .what-we-do-section__title{
-  font-weight: 700;
+font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -15,15 +19,21 @@
 }
 
 .img-container__list {
-  display: flex;
-  justify-content: center;
-  margin-left: -30px;
+display: flex;
+justify-content: center;
+margin-left: -30px;
 }
 
 .img-container__item {
+display: block;
 width: calc(100% / 3 - 30px);
 margin-left: 30px;
 position: relative;
+}
+
+.img-container_picture {
+  width: 370px;
+  height: 294px;
 }
 
 .item__description {

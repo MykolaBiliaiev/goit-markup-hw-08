@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
@@ -22,7 +23,35 @@
                 <span class="logo__web--blue-color">Web</span><span class="logo_studio--black-color">Studio</span>
             </a>
 
-            <nav class="header-navigation">
+        <nav class="header-navigation">
+                
+                <button type="button" class="open-menu js-open-menu">
+                    <svg width="24" height="16" class="open-menu_btn-icon"
+                    aria-label="mobile-menu">
+                        <use class="icon-menu" href="images/symbol-defs.svg#mobile-menu_icon"></use>
+                    </svg>
+                </button>
+
+            <div class="mobile-menu js-menu-container" id="mobile-menu">
+                <button class="js-close-menu">
+                    <svg width="16" height="16" class="icon-cross">
+                        <use class="icon-cross" href="images/symbol-defs.svg#cross-icon"></use>
+                    </svg>
+                </button>
+    <div class="navigation">
+        <ul class="list">
+        <li class="mobile-menu_nav-link"><a href="./index.html">Студия</a></li>
+        <li class="mobile-menu_nav-link"><a href="./portfolio.html">Портфолио</a></li>
+        <li class="mobile-menu_nav-link">Контакты</li>
+        </ul>
+    </div>
+    <div class="contacts">
+    <ul class="list">
+    <li class="mobile-menu_nav-link"><a href="tel:+380961111111">+380961111111</a></li>
+    <li class="mobile-menu_nav-link"><a href="mailto:info@devstudio.com">info@example.com</a></li>
+    </ul>
+</div>
+            </div>
 
                 <ul class="site-nav list">
                     <li class="site-nav__item"><a href="./index.html"
@@ -148,19 +177,19 @@
                 <div class="img-container">
                     <ul class="img-container__list list">
                         <li class="img-container__item">
-                            <img src="./images/what-we-do-section/what-we-do1.jpg" width="370" height="294"
-                                alt="руки набирают текст">
+                            <img src="./images/what-we-do-section/what-we-do1.jpg" 
+                                alt="руки набирают текст" class="img-container_picture">
                             <p class="item__description">Десктопные приложения</p>
                         </li>
 
                         <li class="img-container__item">
-                            <img src="./images/what-we-do-section/what-we-do2.jpg" width="370" height="294"
+                            <img src="./images/what-we-do-section/what-we-do2.jpg" 
                                 alt="смартфон в руках">
                             <p class="item__description">Мобильные приложения</p>
                         </li>
 
                         <li class="img-container__item">
-                            <img src="./images/what-we-do-section/what-we-do3.jpg" width="370" height="294"
+                            <img src="./images/what-we-do-section/what-we-do3.jpg"
                                 alt="планшет с мозаикой">
                             <p class="item__description">Дизайнерские решения</p>
                         </li>
@@ -176,7 +205,7 @@
 
                 <ul class="our-team__list list">
                     <li class="our-team__item">
-                        <img src="./images/our-team/team-card1.jpg" width="270" height="260" alt="член команды игорь">
+                        <img src="./images/our-team/team-card1.jpg" alt="член команды игорь" class="our-team_img">
                         <div class="team-member-description">
                             <h3 class="team-member-description__title">Игорь Демьяненко</h3>
                             <p lang="en" class="team-member-description__position">Product Designer</p>
@@ -214,7 +243,7 @@
                     </li>
 
                     <li class="our-team__item">
-                        <img src="./images/our-team/team-card2.jpg" width="270" height="260" alt="член команды ольга">
+                        <img src="./images/our-team/team-card2.jpg" alt="член команды ольга" class="our-team_img">
 
                         <div class="team-member-description">
                             <h3 class="team-member-description__title">Ольга Репина</h3>
@@ -253,7 +282,7 @@
                     </li>
 
                     <li class="our-team__item">
-                        <img src="./images/our-team/team-card3.jpg" width="270" height="260" alt="член команды николай">
+                        <img src="./images/our-team/team-card3.jpg" alt="член команды николай" class="our-team_img">
 
                         <div class="team-member-description">
                             <h3 class="team-member-description__title">Николай Тарасов</h3>
@@ -292,7 +321,7 @@
                     </li>
 
                     <li class="our-team__item">
-                        <img src="./images/our-team/team-card4.jpg" width="270" height="260" alt="член команды михаил">
+                        <img src="./images/our-team/team-card4.jpg" alt="член команды михаил" class="our-team_img">
 
                         <div class="team-member-description">
                             <h3 class="team-member-description__title">Михаил Ермаков</h3>
@@ -334,45 +363,45 @@
         </section>
 
         <section class="our-clients">
-            <div class="container">
+            <div class="our-clients_container">
                 <h2 class="our-clients__title">Постоянные клиенты</h2>
                 <ul class="our-clients__list list">
-                    <li>
+                    <li class="our-clients_item">
                         <a href="" class="our-clients__link">
-                            <svg class="our-clients__logo" width="106" height="60">
+                            <svg class="our-clients__logo">
                                 <use href="./images/symbol-defs.svg#icon-client-logo-1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="our-clients_item">
                         <a href="" class="our-clients__link">
-                            <svg class="our-clients__logo" width="106" height="60">
+                            <svg class="our-clients__logo">
                                 <use href="./images/symbol-defs.svg#icon-clients-logo-2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="our-clients_item">
                         <a href="" class="our-clients__link">
                             <svg class="our-clients__logo" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-clients-logo-3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="our-clients_item">
                         <a href="" class="our-clients__link">
                             <svg class="our-clients__logo" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-clients-logo-4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="our-clients_item">
                         <a href="" class="our-clients__link">
                             <svg class="our-clients__logo" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-clients-logo-5"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="our-clients_item">
                         <a href="" class="our-clients__link">
                             <svg class="our-clients__logo" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-clients-logo-6"></use>
@@ -391,7 +420,7 @@
         <div class="footer__content">
             <div>
 
-                <a href="./index.html" class="logo link " lang="en">
+                <a href="./index.html" class="logo link logo-footer_mobile" lang="en">
                     <span class="logo__web--blue-color">Web</span><span
                         class="logo_studio logo_studio--inverse">Studio</span>
                 </a>
@@ -465,21 +494,7 @@
     </footer>
 
     <script src="./js/modal.js"></script>
-    <script>
-        (() => {
-            document
-                .querySelector('.js-speaker-form')
-                .addEventListener('submit', e => {
-                    e.preventDefault();
-
-                    new FormData(e.currentTarget).forEach((value, name) =>
-                        console.log(`${name}: ${value}`),
-                    );
-
-                    e.currentTarget.reset();
-                });
-        })();
-    </script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
