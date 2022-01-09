@@ -1,6 +1,7 @@
 .our-team {
 background-color: #f5f4fa;
 padding-top: 60px;
+width: 100%;
 
     @media screen and (min-width:1200px) {
     display: flex;
@@ -9,17 +10,25 @@ padding-top: 60px;
 }
 
 .our-team__list {
-margin: 0;
+display: flex;
+flex-wrap: wrap;
+margin: -15px;
+
+
+    @media screen and (min-width:1200px) {
+        flex-basis: calc((100% - 2 * 15px) / 2);
+    }
+
 
     @media screen and (min-width:1200px) {
     display: flex;
     margin: -15px;
-    }
+    } 
 }
 
 .our-team__title {
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:1169px) {
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
@@ -52,30 +61,39 @@ border-right: 1px solid #eeeeee;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 
-&:not(:last-child) {
-    margin-bottom: 30px;
-}
-
-&:last-child {
-    margin-bottom: 60px;
-}
-
-
-    @media screen and (min-width:1179px) {
-    flex-basis: calc(100% / 4);
+@media screen and (max-width: 767px) {
+    flex-basis: 100%;
     margin: 15px;
     }
+    
+    @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+    }
+
+
+&:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 15px;
+    }
+}
 }
 
+
 .our-team_img {
-width: 450px;
-height: 460px;
+width: 100%;
 }
 
 .team-member-description {
 
-    @media screen and (min-width:1170px) {
-    padding-top: 30px;
+    @media screen and (min-width:1200px) {
     padding-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
@@ -86,15 +104,15 @@ height: 460px;
 margin-top: 30px;
 font-family: Roboto;
 font-style: normal;
-font-weight: normal;
+font-weight: 500;
 font-size: 16px;
 line-height: 19px;
 text-align: center;
 letter-spacing: 0.03em;
-color: #757575;
+color: #212121;
 
 
-    @media screen and (min-width:1179px) {
+    @media screen and (min-width:1200px) {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;

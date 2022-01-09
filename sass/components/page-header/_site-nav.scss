@@ -51,7 +51,6 @@ color: map-get($colors , "primary");;
 
 .site-nav__text--current {
 position: relative;
-padding-bottom: 28px;
 color: map-get($colors , "primary");;
 }
 
@@ -59,7 +58,7 @@ color: map-get($colors , "primary");;
     &::after {
 position: absolute;
 left: 0;
-bottom: 0;
+bottom: -28px;
 content: "";
 display: block;
 width: 100%;

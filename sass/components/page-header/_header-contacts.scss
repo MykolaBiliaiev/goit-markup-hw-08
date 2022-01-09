@@ -12,6 +12,15 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: none;
 }
 
+@media screen and (min-width:768px) {
+display: inline-block;
+color: #757575;
+margin-left: auto;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 &:hover, &:focus {
     color: map-get($colors , "primary");;
 }
@@ -22,6 +31,10 @@ font-size: 14px;
 line-height: 1.14;
 font-weight: 500;
 letter-spacing: 0.02em;
+
+&:first-child{
+margin-bottom: 10px;
+}
 }
 
 .header-contacts__mail {
@@ -31,7 +44,8 @@ margin-right: 30px;
 .header-contacts__icon {
 margin-right: 10px;
 fill: currentColor;
-margin-bottom: 3px;
+margin-top: auto;
+margin-bottom: auto;
 
 &:hover {
     fill: currentColor;

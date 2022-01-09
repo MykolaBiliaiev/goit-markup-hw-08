@@ -1,16 +1,23 @@
 .footer-subscribe-zone {
 
-
-@media screen and (min-width: 1170px) {
+    @media screen and (max-width: 767px) {
 display: flex;
-width: 570px;
-margin-top: 12px;
-margin-left: 93px;
+flex-direction: column;
+align-items: center;
+width: 100%;
 }
+
+    @media screen and (min-width:768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    width: 570px;
+    display: flex;
+    }
 }
 
 .footer-subscribe-zone__title {
-display: inline-block;
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
@@ -20,13 +27,18 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: map-get($colors , "secondary" );
 margin-bottom: 20px;
-margin-left: auto;
-margin-right: auto;
+text-align: center;
+
+    @media screen and (min-width: 1200px) {
+    text-align: left;
+    }
+
 }
 
 .footer-subscribe-zone__email-input {
 margin-left: 15px;
 margin-right: 15px;
+margin-bottom: 20px;
 width: 450px;
 height: 50px;
 background-color: transparent;
@@ -37,17 +49,14 @@ border-radius: 4px;
 padding: 15px;
 color: orange;
 
-@media screen and (min-width: 1170px) {
-width: 358px;
-height: 50px;
-background-color: transparent;
-border: 1px solid rgba(255, 255, 255, 0.3);
-box-sizing: border-box;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-padding: 15px;
-color: orange;
-}
+    @media screen and (min-width: 768px) {
+    width: 450px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+    }
 
 &::placeholder {
     font-family: Roboto;
@@ -63,53 +72,39 @@ color: orange;
 }
 
 .subscribe-btn {
-position: relative;
+display: flex;
+justify-content: space-around;
 width: 200px;
 height: 50px;
-background: map-get($colors , "primary");;
+color: map-get($colors , "secondary");
+background: map-get($colors , "primary" );
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-color: map-get($colors , "secondary" );
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
+border: none;
+cursor: pointer;
+font-weight: 700;
 font-size: 16px;
-line-height: 30px;
+line-height: 1.87;
+align-items: center;
 letter-spacing: 0.06em;
-margin-left: auto;
-margin-right: auto;
-margin-top: 20px;
 
-@media screen and (min-width: 1170px)  {
-position: relative;
-width: 200px;
-height: 50px;
-background: map-get($colors , "primary");;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-color: map-get($colors , "secondary" );
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 30px;
-letter-spacing: 0.06em;
-margin-left: 12px;
-    
-}
-
+@media screen and (min-width:1200px) {
+    margin-top: 36px;
+    margin-left: 12px;
 }
 
 .subscribe-btn__text {
-position: absolute;
-left: 29px;
-top: 10px;
+@media screen and (min-width:1200px) {
+    }
 }
 
+
 .subscribe-btn__icon {
-position: absolute;
-right: 28px;
-top: 13px;
-margin-left: 10px;
-fill: map-get($colors , "secondary" );
+    margin-left: 10px;
+    fill: map-get($colors , "secondary");
+    }
+
+    @media screen and (min-width: 1200px) {
+    margin-left: 10px;
+    }
 }

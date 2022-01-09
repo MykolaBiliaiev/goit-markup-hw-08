@@ -8,25 +8,62 @@ padding-bottom: 60px;
     justify-content: space-between;
 }
 
+@media screen and (min-width:1200px) {
+    padding-left: 215px;
+}
+
 }
 
 .footer__content {
-text-align: center;
-margin-left: auto;
-margin-right: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
 
-@media screen and (min-width: 768px)  {
-    display: flex;
-}
-
-@media screen and (min-width: 1170px) {
-    text-align-last: left;
     
-}
+    @media screen and (min-width: 768px) {
+    width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+
+    }
+    @media screen and (min-width: 1200px) {
+    width: 1200px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    }
 }
 
-.footer-contacts__item:not(:last-child) {
+.footer__first-box {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 60px;
+
+@media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+    align-items: start;
+}
+
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    align-items: stretch;
+    }
+}
+
+.footer-contacts__item {
+text-align: center;
+
+@media screen and (min-width:768px) {
+    text-align: left;
+}
+
+
+&:not(:last-child) {
 margin-bottom: 9px;
+}
 }
 
 .footer-contacts__location {
@@ -35,8 +72,6 @@ font-size: 14px;
 line-height: 1.7;
 font-weight: 400;
 font-style: normal;
-font-size: 14px;
-line-height: 1.7;
 margin-bottom: 9px;
 margin-top: 20px;
 }
@@ -48,20 +83,22 @@ font-weight: 400;
 font-style: normal;
 font-size: 14px;
 line-height: 1.7;
+text-align: center;
 }
 
-.footer-social-media {
+.footer-social-media{
 width: 206px;
-margin-top: 60px;
-margin-left: auto;
-margin-right: auto;
+margin-bottom: 60px;
 
-@media screen and (min-width: 1170px) {
-    width: 206px;
-    margin-right: auto;
+    @media screen and (min-width: 768px) {
+    margin-bottom: 102px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
     margin-left: 70px;
-    margin-top: 12px;
-}
+    margin-right: auto;
+    }
 }
 
 .join-us-title {
@@ -74,5 +111,6 @@ font-weight: bold;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.03em;
+text-align: center;
 }
 

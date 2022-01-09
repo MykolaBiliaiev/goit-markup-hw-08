@@ -22,36 +22,45 @@
 
         <nav class="header-navigation">
 
-<button type="button" class="open-menu js-open-menu">
-    <svg width="24" height="16" class="open-menu_btn-icon" aria-label="mobile-menu">
-        <use class="icon-menu" href="images/symbol-defs.svg#mobile-menu_icon"></use>
-    </svg>
-</button>
+            <button type="button" class="open-menu js-open-menu">
+                <svg width="24" height="16" class="open-menu_btn-icon" aria-label="mobile-menu">
+                    <use class="icon-menu" href="images/symbol-defs.svg#mobile-menu_icon"></use>
+                </svg>
+            </button>
 
-<div class="mobile-menu js-menu-container" id="mobile-menu">
-    <button class="js-close-menu">
-        <svg width="16" height="16" class="icon-cross">
-            <use class="icon-cross" href="images/symbol-defs.svg#cross-icon"></use>
-        </svg>
-    </button>
-    <div class="navigation">
-        <ul class="list">
-            <li class="mobile-menu_nav-link"><a href="./index.html">Студия</a></li>
-            <li class="mobile-menu_nav-link"><a href="./portfolio.html">Портфолио</a></li>
-            <li class="mobile-menu_nav-link">Контакты</li>
-        </ul>
-    </div>
-    <div class="contacts">
-        <ul class="list">
-            <li class="mobile-menu_nav-link"><a href="tel:+380961111111">+380961111111</a></li>
-            <li class="mobile-menu_nav-link"><a href="mailto:info@devstudio.com">info@example.com</a></li>
-        </ul>
-    </div>
-</div>
+            <div class="mobile-menu js-menu-container" id="mobile-menu">
+                <button class="js-close-menu">
+                    <svg width="16" height="16" class="icon-cross">
+                        <use class="icon-cross" href="images/symbol-defs.svg#cross-icon"></use>
+                    </svg>
+                </button>
+                <div class="navigation">
+                    <ul class="list">
+                        <li class="mobile-menu__nav-link "><a href="./index.html">Студия</a></li>
+                        <li class="mobile-menu__nav-link mobile-menu__nav-link--current"><a href="./portfolio.html">Портфолио</a></li>
+                        <li class="mobile-menu__nav-link">Контакты</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <ul class="list">
+                        <li class="mobile-menu__nav-link mobile-menu__nav-link--blue"><a
+                                href="tel:+380961111111">+380961111111</a></li>
+                        <li class="mobile-menu__nav-link mobile-menu__nav-link--grey "><a
+                                href="mailto:info@devstudio.com">info@example.com</a></li>
+                    </ul>
+                </div>
+
+                <ul class="mobile-soc-media">
+                    <li class="mobile-soc-media__item"><a href="">Instagram</a></li>
+                    <li class="mobile-soc-media__item"><a href="">Twitter</a></li>
+                    <li class="mobile-soc-media__item"><a href="">Facebook</a></li>
+                    <li class="mobile-soc-media__item"><a href="">Linkedin</a></li>
+                </ul>
+
+            </div>
 
             <ul class="site-nav list">
-                <li class="site-nav__item"><a href="./index.html"
-                        class="site-nav__text">Студия</a></li>
+                <li class="site-nav__item"><a href="./index.html" class="site-nav__text">Студия</a></li>
                 <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__text site-nav__text--current">Портфолио</a></li>
                 <li class="site-nav__item"><a href="" class="site-nav__text">Контакты</a></li>
             </ul>
@@ -59,13 +68,13 @@
 
         <ul class="header-contacts list">
             <li class="header-contacts__item"><a href="mailto:info@devstudio.com"
-                    class="header-contacts header-contacts__mail">
+                    class="header-contacts_link header-contacts__mail">
                     <svg class="header-contacts__icon" width="16" height="12">
                         <use href="./images/symbol-defs.svg#icon-envelope"></use>
                     </svg>
                     info@example.com</a>
             </li>
-            <li class="header-contacts__item"><a href="tel:+380961111111" class="header-contacts">
+            <li class="header-contacts__item"><a href="tel:+380961111111" class="header-contacts_link">
                     <svg class="header-contacts__icon" width="10" height="16">
                         <use href="./images/symbol-defs.svg#icon-smartphone"> </use>
                     </svg>
@@ -227,9 +236,9 @@
 <footer class="footer">
 
     <div class="footer__content">
-        <div>
 
-            <a href="./index.html" class="logo link " lang="en">
+        <div class="footer__first-box">
+            <a href="./index.html" class="logo link logo-footer_mobile" lang="en">
                 <span class="logo__web--blue-color">Web</span><span
                     class="logo_studio logo_studio--inverse">Studio</span>
             </a>
@@ -246,7 +255,7 @@
                     <li class="footer-contacts__item footer-contacts__mail"><a href="mailto:info@example.com"
                             class="footer-contacts__connection  link">info@example.com</a>
                     </li>
-                    <li>
+                    <li class="footer-contacts__item">
                         <a href="tel:+380991111111"
                             class="footer-contacts__connection footer-contacts__item  link ">+380991111111</a>
                     </li>
