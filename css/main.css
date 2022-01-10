@@ -1093,19 +1093,14 @@ a {
 
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
-  .footer {
-    display: flex;
-    justify-content: space-between;
-  }
-}
+
 .footer__content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__content {
@@ -1117,7 +1112,8 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .footer__content {
-    margin-left: 120px;
+    width: 1200px;
+    padding-left: 50px;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
@@ -1129,12 +1125,6 @@ a {
   align-items: center;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
-  .footer__first-box {
-    margin-bottom: 60px;
-    align-items: start;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer__first-box {
     margin-bottom: 0;
@@ -1145,7 +1135,7 @@ a {
 .footer-contacts__item {
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-contacts__item {
     text-align: left;
   }
@@ -1174,22 +1164,6 @@ a {
   text-align: center;
 }
 
-.footer-social-media {
-  width: 206px;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .footer-social-media {
-    margin-bottom: 102px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-social-media {
-    margin-bottom: 0;
-    margin-left: 70px;
-  }
-}
-
 .join-us-title {
   color: #fff;
   text-transform: uppercase;
@@ -1203,27 +1177,34 @@ a {
   text-align: center;
 }
 
-@media screen and (max-width: 767px) {
-  .footer-subscribe-zone {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+.footer-social-media {
+  width: 206px;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
-  .footer-subscribe-zone {
-    margin-left: 166px;
-    margin-right: 145px;
-    width: 100%;
-    align-items: center;
+  .footer-social-media {
+    margin-bottom: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .footer-social-media {
+    margin-bottom: 0;
+    margin-left: 70px;
+    margin-right: auto;
+  }
+}
+
+.footer-subscribe-zone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
   .footer-subscribe-zone {
-    display: flex;
-    margin-top: 12px;
-    margin-left: 93px;
+    width: 570px;
+    align-items: stretch;
   }
 }
 
@@ -1239,11 +1220,28 @@ a {
   margin-bottom: 20px;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-zone__title {
+    text-align: left;
+  }
+}
+
+.footer-subscribe-zone__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-zone__form {
+    flex-direction: row;
+  }
+}
+
 .footer-subscribe-zone__email-input {
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 20px;
-  margin-top: 20px;
   width: 450px;
   height: 50px;
   background-color: transparent;
@@ -1254,17 +1252,9 @@ a {
   padding: 15px;
   color: orange;
 }
-@media screen and (min-width: 768px) {
-  .footer-subscribe-zone__email-input {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-subscribe-zone__email-input {
-    width: 358px;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
   }
 }
 .footer-subscribe-zone__email-input::-moz-placeholder {
@@ -1304,6 +1294,7 @@ a {
 .subscribe-btn {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 200px;
   height: 50px;
   color: #fff;
@@ -1315,20 +1306,11 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
   letter-spacing: 0.06em;
-}
-@media screen and (min-width: 768px) {
-  .subscribe-btn {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe-btn {
-    margin-top: 36px;
-    width: 200px;
-    margin-left: -50px;
+    margin-left: 12px;
   }
 }
 .subscribe-btn .subscribe-btn__icon {
