@@ -1205,6 +1205,7 @@ a {
   .footer-subscribe-zone {
     width: 570px;
     align-items: stretch;
+    margin-bottom: 25px;
   }
 }
 
