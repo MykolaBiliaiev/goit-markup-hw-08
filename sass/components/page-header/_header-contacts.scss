@@ -1,12 +1,4 @@
 .header-contacts {
-display: flex;
-justify-content: center;
-align-items: center;
-color: #757575;
-margin-left: auto;
-transition-property: color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 @media screen and (max-width:767px) {
     display: none;
@@ -21,8 +13,15 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&:hover, &:focus {
-    color: map-get($colors , "primary");;
+@media screen and (min-width:1200px) {
+display: flex;
+justify-content: center;
+align-items: center;
+color: #757575;
+margin-left: 305px;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
 
@@ -32,8 +31,15 @@ line-height: 1.14;
 font-weight: 500;
 letter-spacing: 0.02em;
 
+&:hover, &:focus {
+    color: #2196f3;
+}
+
 &:first-child{
 margin-bottom: 10px;
+@media screen and (min-width:1200px) {
+    margin-bottom: 0;
+}
 }
 }
 

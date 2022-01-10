@@ -12,6 +12,9 @@ font-style: normal;
 
 &:last-child {
 margin-right: 50px;
+@media screen and (min-width:1200px) {
+    margin-right: 0;
+}
 }
 }
 
@@ -20,7 +23,7 @@ margin-right: 50px;
     margin-left: 88px;
 }
 
-@media screen and (min-width:1170px) {
+@media screen and (min-width:1200px) {
     margin-left: 93px;
 }
 }
@@ -58,11 +61,18 @@ color: map-get($colors , "primary");;
     &::after {
 position: absolute;
 left: 0;
-bottom: -28px;
+bottom: -31px;
 content: "";
 display: block;
 width: 100%;
 height: 4px;
 background-color:map-get($colors , "primary");;
+
+@media screen and (min-width:768px) {
+    bottom: -40px;
+}
+@media screen and (min-width:1200px) {
+    bottom: -31px;
+}
 }
 }

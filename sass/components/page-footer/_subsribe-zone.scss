@@ -8,12 +8,17 @@ width: 100%;
 }
 
     @media screen and (min-width:768px) {
-        width: 450px;
+    margin-left: 166px;
+    margin-right: 145px;
+    width: 100%;
+    align-items: center;
     }
 
     @media screen and (min-width: 1200px) {
-    width: 570px;
     display: flex;
+    // width: 570px;
+    margin-top: 12px;
+    margin-left: 93px;
     }
 }
 
@@ -29,8 +34,12 @@ color: map-get($colors , "secondary" );
 margin-bottom: 20px;
 text-align: center;
 
+    @media screen and (min-width: 768px) {
+        
+    }
+
     @media screen and (min-width: 1200px) {
-    text-align: left;
+    // text-align: left;
     }
 
 }
@@ -39,6 +48,7 @@ text-align: center;
 margin-left: 15px;
 margin-right: 15px;
 margin-bottom: 20px;
+margin-top: 20px;
 width: 450px;
 height: 50px;
 background-color: transparent;
@@ -56,6 +66,8 @@ color: orange;
     @media screen and (min-width: 1200px) {
     width: 358px;
     margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
     }
 
 &::placeholder {
@@ -73,7 +85,7 @@ color: orange;
 
 .subscribe-btn {
 display: flex;
-justify-content: space-around;
+justify-content: center;
 width: 200px;
 height: 50px;
 color: map-get($colors , "secondary");
@@ -88,9 +100,15 @@ line-height: 1.87;
 align-items: center;
 letter-spacing: 0.06em;
 
+    @media screen and (min-width:768px) {
+    margin-left: auto;
+    margin-right: auto;
+    }
+
 @media screen and (min-width:1200px) {
     margin-top: 36px;
-    margin-left: 12px;
+    width: 200px;
+    margin-left: -50px;
 }
 
 .subscribe-btn__text {
@@ -98,13 +116,8 @@ letter-spacing: 0.06em;
     }
 }
 
-
 .subscribe-btn__icon {
     margin-left: 10px;
     fill: map-get($colors , "secondary");
-    }
-
-    @media screen and (min-width: 1200px) {
-    margin-left: 10px;
     }
 }

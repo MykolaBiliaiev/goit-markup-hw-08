@@ -1,4 +1,5 @@
 .open-menu {
+    @media screen and (max-width:480px) {
     position: absolute;
     top: 10px;
     left: 425px;
@@ -9,6 +10,7 @@
     margin: 0;
     border: none;
     background-color: transparent;
+}
 
     @media screen and (min-width:767px) {
     display: none;

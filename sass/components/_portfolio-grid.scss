@@ -36,7 +36,7 @@ height: 404px;
     height: 440px;
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
 flex-basis: calc(100% / 3 - 2 * 15px);
 margin: 15px;
 width: 370px;
@@ -63,16 +63,6 @@ transform: translateY(0);
 .thumb {
 overflow: hidden;
 position: relative;
-
-@media  screen and (min-width:768px) {
-width: 354px;
-height: 294px;    
-}
-}
-
-.thumb-img {
-width: 450px;
-height: 294px;
 }
 
 .thumb__text-overlay {
@@ -100,7 +90,6 @@ padding: 20px 24px;
 border-left: 1px solid #eeeeee;
 border-bottom: 1px solid #eeeeee;
 border-right: 1px solid #eeeeee;
-width: 450px;
 }
 
 .card-text__title {
