@@ -16,13 +16,10 @@
 
 .grid__item {
 display: inline-block;
-margin-left: 15px;
-margin-right: auto;
 align-items: center;
-width: 450px;
 
-
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
+    margin: 15px;
     width: 450px;
 }
 
@@ -52,6 +49,10 @@ transform: translateY(0);
 .thumb {
 overflow: hidden;
 position: relative;
+}
+
+.thumb-img {
+    width: 100%;
 }
 
 .thumb__text-overlay {
