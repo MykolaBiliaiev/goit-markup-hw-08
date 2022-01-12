@@ -84,6 +84,11 @@ a {
   line-height: 28px;
   letter-spacing: 0.03em;
 }
+@media screen and (max-width: 480px) {
+  .logo {
+    text-align: left;
+  }
+}
 @media screen and (min-width: 768px) {
   .logo {
     display: inline-block;
@@ -285,7 +290,7 @@ a {
   width: 100%;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-background-mobile.jpg);
   height: 400px;
-  max-width: 480px;
+  max-width: 767px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -328,7 +333,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .hero {
     padding-top: 118px;
   }
@@ -680,7 +685,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .our-benefits__item {
-    flex-basis: 100%;
+    max-width: 767px;
   }
   .our-benefits__item:not(:last-child) {
     margin-bottom: 30px;
@@ -883,10 +888,10 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .our-team__title {
     font-weight: 700;
     font-size: 36px;
@@ -1028,15 +1033,14 @@ a {
 }
 
 .our-clients_container {
-  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 768px) {
   .our-clients_container {
-    width: 787px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1044,6 +1048,8 @@ a {
     width: 1200px;
     padding-bottom: 94px;
     padding-top: 94px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -1159,7 +1165,6 @@ a {
 @media screen and (min-width: 1200px) {
   .footer__content {
     width: 1200px;
-    padding-left: 50px;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
@@ -1286,21 +1291,30 @@ a {
 }
 
 .footer-subscribe-zone__email-input {
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 20px;
   width: 450px;
   height: 50px;
-  background-color: transparent;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 10px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  padding: 15px;
-  color: orange;
+  background-color: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 1199px) {
+  .footer-subscribe-zone__email-input {
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-subscribe-zone__email-input {
+    width: 358px;
     margin: 0;
   }
 }
@@ -1404,7 +1418,7 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .filters-list__btn:hover, .filters-list__btn:focus {
     background-color: #2196f3;
     color: #fff;
@@ -1425,6 +1439,8 @@ a {
 .projects-img-container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1440,10 +1456,10 @@ a {
   display: inline-block;
   align-items: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .grid__item {
     margin: 15px;
-    width: 450px;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1497,6 +1513,11 @@ a {
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 767px) {
+  .thumb__text-overlay {
+    display: none;
+  }
+}
 
 .card-text {
   padding: 20px 24px;
@@ -1519,6 +1540,12 @@ a {
   line-height: 1.9;
   letter-spacing: 0.03em;
   font-weight: normal;
+}
+
+@media screen and (min-width: 767px) {
+  .mobile-version-container {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {

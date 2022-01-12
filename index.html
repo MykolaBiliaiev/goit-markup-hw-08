@@ -18,20 +18,17 @@
     <!--header-block-section-->
     <header class="page-header">
         <div class="container page-header__container">
-
             <a href="./index.html" class="logo link" lang="en">
                 <span class="logo__web--blue-color">Web</span><span class="logo_studio--black-color">Studio</span>
             </a>
 
+            <button type="button" class="open-menu js-open-menu">
+                <svg width="24" height="16" class="open-menu_btn-icon" aria-label="mobile-menu">
+                    <use class="icon-menu" href="images/symbol-defs.svg#mobile-menu_icon"></use>
+                </svg>
+            </button>
         <nav class="header-navigation">
                 
-                <button type="button" class="open-menu js-open-menu">
-                    <svg width="24" height="16" class="open-menu_btn-icon"
-                    aria-label="mobile-menu">
-                        <use class="icon-menu" href="images/symbol-defs.svg#mobile-menu_icon"></use>
-                    </svg>
-                </button>
-
             <div class="mobile-menu js-menu-container" id="mobile-menu">
                 <button class="js-close-menu">
                     <svg width="16" height="16" class="icon-cross">
@@ -215,19 +212,23 @@
                     <li class="our-team__item">
                         <picture>
                             <source
-                            srcset="./images/our-team/desktop/team-card-1-desk.jpg 1x,
-                            ./images/our-team/desktop/team-card-1-desk@2x.jpg 2x"
-                            media="(min-width:1200px)">
+                            media="(min-width:1200px)"
+                            srcset="
+                            ./images/our-team/desktop/team-card-1-desk.jpg 1x,
+                            ./images/our-team/desktop/team-card-1-desk@2x.jpg 2x
+                            "/>
 
                             <source 
+                            media="(min-width:768px)"
                             srcset="./images/our-team/tablet/team-card-1-tablet.jpg 1x,
                             ./images/our-team/tablet/team-card-1-tablet@2x.jpg 2x" 
-                            media="(min-width:768px)">
+                            />
                             
-                            <source 
+                            <source
+                            media="(min-width:320px)"
                             srcset="./images/our-team/mobile/team-card-1-mobile.jpg 1x,
                             ./images/our-team/mobile/team-card-1-mobile@2x.jpg 2x" 
-                            media="(min-width:320px)">
+                            />
                             <!-- <img src="./images/our-team/desktop/team-card-1-desk.jpg" alt="член команды игорь" class="our-team_img"> -->
                             </picture>
 
@@ -381,14 +382,13 @@
                     <li class="our-team__item">
                         <picture>
                             <source srcset="./images/our-team/desktop/team-card-4-desk.jpg 1x,
-                                ./images/our-team/desktop/team-card-4-desk@2x.jpg 2x" media="(min-width:1200px)">
+                                ./images/our-team/desktop/team-card-4-desk@2x.jpg 2x" media="(min-width:1200px)"/>
                         
                             <source srcset="./images/our-team/tablet/team-card-4-tablet.jpg 1x,
-                                ./images/our-team/tablet/team-card-4-tablet@2x.jpg 2x" media="(min-width:768px)">
+                                ./images/our-team/tablet/team-card-4-tablet@2x.jpg 2x" media="(min-width:768px)"/>
                         
                             <source srcset="./images/our-team/mobile/team-card-4-mobile.jpg 1x,
-                                ./images/our-team/mobile/team-card-4-mobile@2x.jpg 2x" media="(min-width:320px)">
-                            <!-- <img src="./images/our-team/desktop/team-card-4-desk.jpg" alt="член команды игорь" class="our-team_img"> -->
+                                ./images/our-team/mobile/team-card-4-mobile@2x.jpg 2x" media="(min-width:320px)"/>
                         </picture>
                         <img 
                         srcset="./images/our-team/mobile/team-card-4-mobile.jpg 1x,
@@ -570,6 +570,9 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

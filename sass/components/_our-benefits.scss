@@ -12,7 +12,7 @@ padding-right: 15px;
 
 .our-benefits__item {
     @media screen and (max-width: 767px) {
-    flex-basis: 100%;
+    max-width: 767px;
 
     &:not(:last-child) {
     margin-bottom: 30px;

@@ -36,7 +36,7 @@ transition-property: background-color, color, box-shadow;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-@media screen and (min-width:1170px) {
+@media screen and (min-width:1200px) {
   &:hover, &:focus {
 background-color: map-get($colors , "primary");;
   color: map-get($colors , "secondary" );

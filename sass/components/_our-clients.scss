@@ -1,12 +1,13 @@
 .our-clients_container {
-width: 100%;
 padding-top: 60px;
 padding-bottom: 60px;
-margin-left: auto;
-margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+// margin-left: auto;
+// margin-right: auto;
 
 @media screen and (min-width:768px) {
-    width: 787px;
+    width: 768px;
     
 }
 
@@ -14,6 +15,8 @@ margin-right: auto;
     width: 1200px;
     padding-bottom: 94px;
     padding-top: 94px;
+    padding-left: 0;
+    padding-right: 0;
     }
 }
 

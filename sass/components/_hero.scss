@@ -9,7 +9,7 @@
     ),
     url(../images/hero/hero-background-mobile.jpg);
   height: 400px;
-  max-width: 480px;
+  max-width: 767px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -68,7 +68,7 @@ margin-right: auto;
 background-size: cover;
 background-repeat: no-repeat;
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:767px) {
   padding-top: 118px;
 }
 @media screen and (min-width:768px) {
